@@ -1,4 +1,4 @@
-(footprint "RESC160X80X55L30N"
+(footprint "CRCW0603"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -18,7 +18,8 @@
 	)
 	(property "Value" "Val**"
 		(at 0 0 0)
-		(layer "F.Fab")
+		(layer "User.1")
+		(hide yes)
 		(uuid "260400d5-4942-4f1a-8360-5c2f4d278620")
 		(effects
 			(font
@@ -357,7 +358,8 @@
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
-		(layer "F.Fab")
+		(layer "User.1")
+		(hide yes)
 		(uuid "0445e2bb-58e5-4552-8bd2-fe797c325374")
 		(effects
 			(font
@@ -366,16 +368,18 @@
 			)
 		)
 	)
-	(pad "1" smd rect
+	(pad "1" smd roundrect
 		(at -0.755 0)
 		(size 0.82 0.929)
 		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
 		(uuid "df0d4b8c-dab1-480b-bccc-265fcad9a77d")
 	)
-	(pad "2" smd rect
+	(pad "2" smd roundrect
 		(at 0.755 0)
 		(size 0.82 0.929)
 		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
 		(uuid "dfb3d1d1-8728-4df5-a185-b32667849525")
 	)
 	(model "${KIPRJMOD}/3d_models/CRCW0603.STEP"

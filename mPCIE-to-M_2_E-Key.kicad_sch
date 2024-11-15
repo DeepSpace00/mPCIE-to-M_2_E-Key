@@ -5,6 +5,137 @@
 	(uuid "92319e80-9ef9-4fce-8d58-8a23815693d7")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H1"
+				(at 2.54 2.5401 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "M2.6"
+				(at 2.54 0.0001 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "lib_fp:M2.60_Vias"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MPN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "DKPN" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "lib_sch:+1V8"
 			(power)
 			(pin_numbers hide)
@@ -1561,8 +1692,8 @@
 				)
 				(pin passive line
 					(at 25.4 -43.18 180)
-					(length 2.54) hide
-					(name "S1"
+					(length 2.54)
+					(name "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1580,7 +1711,7 @@
 				(pin passive line
 					(at 25.4 -43.18 180)
 					(length 2.54) hide
-					(name "S2"
+					(name "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2612,24 +2743,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 2.54 -30.48 90)
-					(length 2.54)
-					(name "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 		)
 		(symbol "lib_sch:C"
@@ -3375,12 +3488,12 @@
 				)
 			)
 		)
-		(symbol "lib_sch:TL1963A-XX"
+		(symbol "lib_sch:TPS797xx-Q1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 0 6.35 0)
+				(at 0 7.366 0)
 				(do_not_autoplace)
 				(effects
 					(font
@@ -3388,9 +3501,8 @@
 					)
 				)
 			)
-			(property "Value" "TL1963A"
-				(at 0 4.318 0)
-				(do_not_autoplace)
+			(property "Value" ""
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3398,7 +3510,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3407,7 +3519,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 0 0)
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3416,7 +3528,7 @@
 				)
 			)
 			(property "Description" ""
-				(at 0 0 0)
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3425,7 +3537,7 @@
 				)
 			)
 			(property "Manufacturer" "Texas Instruments"
-				(at 0 0.254 0)
+				(at -0.254 0 0)
 				(do_not_autoplace)
 				(effects
 					(font
@@ -3435,39 +3547,39 @@
 				)
 			)
 			(property "MPN" ""
-				(at 0 0 0)
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "DKPN" ""
-				(at 0 0 0)
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(symbol "TL1963A-XX_1_1"
+			(symbol "TPS797xx-Q1_0_1"
 				(rectangle
-					(start -6.35 3.175)
-					(end 6.35 -6.35)
+					(start -5.08 6.35)
+					(end 5.08 -6.35)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-				(pin power_in line
-					(at -8.89 0 0)
+			)
+			(symbol "TPS797xx-Q1_1_1"
+				(pin open_collector line
+					(at 7.62 -2.54 180)
 					(length 2.54)
-					(name "IN"
+					(name "PG"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3500,10 +3612,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 8.89 0 180)
-					(length 2.54)
-					(name "VOUT"
+				(pin no_connect line
+					(at -7.62 -2.54 0)
+					(length 2.54) hide
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3518,10 +3630,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -8.89 90)
-					(length 2.54) hide
-					(name "GND"
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "IN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3536,20 +3648,32 @@
 						)
 					)
 				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 		)
 	)
 	(junction
-		(at 102.87 134.62)
+		(at 59.69 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0f1f044f-b5bc-40ee-a017-cb4d1f6ac83d")
-	)
-	(junction
-		(at 63.5 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29523d2a-d0d8-4420-b268-cb7b58d47386")
+		(uuid "26630d9b-9898-4f32-85cd-b917f145fb49")
 	)
 	(junction
 		(at 96.52 66.04)
@@ -3562,6 +3686,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "801feb7a-2496-49af-985a-d93a838f0e8e")
+	)
+	(junction
+		(at 68.58 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "882f1222-a1a0-436a-89f5-89ab1ebad564")
 	)
 	(junction
 		(at 38.1 38.1)
@@ -3654,6 +3784,10 @@
 	(no_connect
 		(at 215.9 58.42)
 		(uuid "3a8d7b9a-c068-4a4d-8555-bb1c87d41a78")
+	)
+	(no_connect
+		(at 215.9 109.22)
+		(uuid "3c504566-7d86-4202-8d68-d89f9da648cb")
 	)
 	(no_connect
 		(at 83.82 96.52)
@@ -3774,6 +3908,10 @@
 	(no_connect
 		(at 215.9 96.52)
 		(uuid "ba85c636-5c56-44de-935f-527c231d11d4")
+	)
+	(no_connect
+		(at 215.9 111.76)
+		(uuid "bbb85b48-8da2-438f-8ff8-5fa53a58e4bc")
 	)
 	(no_connect
 		(at 119.38 124.46)
@@ -3919,17 +4057,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 38.1) (xy 63.5 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15eeeb24-0868-4213-8b62-1ef7d4d32cb8")
-	)
-	(wire
-		(pts
-			(xy 41.91 38.1) (xy 38.1 38.1)
+			(xy 38.1 38.1) (xy 43.18 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3939,13 +4067,13 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 34.29) (xy 152.4 50.8)
+			(xy 58.42 43.18) (xy 59.69 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1cd1a3ae-a226-41d9-a817-51791ae2cbab")
+		(uuid "1c8598be-ae9e-49f8-9a19-d3c2960d3739")
 	)
 	(wire
 		(pts
@@ -3966,6 +4094,16 @@
 			(type default)
 		)
 		(uuid "21e6a4b4-666c-42ff-8aa2-a6423c77e4cd")
+	)
+	(wire
+		(pts
+			(xy 50.8 80.01) (xy 50.8 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "230df1e4-9f42-4180-82f9-f31b358b8fd1")
 	)
 	(wire
 		(pts
@@ -4029,16 +4167,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 137.16) (xy 102.87 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3ee6b5df-4970-47d0-89c4-323424e6886c")
-	)
-	(wire
-		(pts
 			(xy 127 25.4) (xy 127 45.72)
 		)
 		(stroke
@@ -4049,13 +4177,23 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 46.99) (xy 63.5 50.8)
+			(xy 68.58 46.99) (xy 68.58 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "497333e8-6273-48e0-adb2-4810e721730b")
+	)
+	(wire
+		(pts
+			(xy 218.44 147.32) (xy 218.44 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d14ee5e-f5de-48aa-a472-72ac4f017443")
 	)
 	(wire
 		(pts
@@ -4109,13 +4247,13 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 134.62) (xy 101.6 134.62)
+			(xy 144.78 38.1) (xy 165.1 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "817a5c36-d29c-42ca-95c2-5a11ae3679ad")
+		(uuid "7871d3a8-1fd7-4d4a-889e-8048b07da055")
 	)
 	(wire
 		(pts
@@ -4139,6 +4277,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 105.41) (xy 38.1 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e361cd6-85bf-4522-837e-7a7149a42d7a")
+	)
+	(wire
+		(pts
 			(xy 99.06 66.04) (xy 101.6 66.04)
 		)
 		(stroke
@@ -4149,13 +4297,23 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 38.1) (xy 76.2 38.1)
+			(xy 38.1 80.01) (xy 38.1 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9801aee0-f38f-4c3a-aa96-d4f54d8b9470")
+		(uuid "9a349259-6c0a-4a90-95a1-3ec71cf16057")
+	)
+	(wire
+		(pts
+			(xy 59.69 38.1) (xy 68.58 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9acf5774-bf66-4e5d-bf17-bc39728e9650")
 	)
 	(wire
 		(pts
@@ -4176,6 +4334,26 @@
 			(type default)
 		)
 		(uuid "9d01800e-c5e8-4299-b001-e7be7e7fc119")
+	)
+	(wire
+		(pts
+			(xy 218.44 144.78) (xy 215.9 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e731593-2ae4-4c6b-905b-edd8b582e947")
+	)
+	(wire
+		(pts
+			(xy 152.4 34.29) (xy 152.4 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a21139e1-0db0-418a-8f17-1765bc4385ab")
 	)
 	(wire
 		(pts
@@ -4239,6 +4417,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 38.1) (xy 59.69 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5271749-7d34-4f8d-897f-20a576baa836")
+	)
+	(wire
+		(pts
 			(xy 91.44 66.04) (xy 93.98 66.04)
 		)
 		(stroke
@@ -4246,16 +4434,6 @@
 			(type default)
 		)
 		(uuid "b76977fb-b7c8-469f-88a9-0f6f253f8b47")
-	)
-	(wire
-		(pts
-			(xy 144.78 38.1) (xy 165.1 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba32652b-262f-4f33-9115-70a0e3b14a87")
 	)
 	(wire
 		(pts
@@ -4279,16 +4457,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 46.99) (xy 50.8 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4eeb680-11d0-4c28-9c5f-7b85643623a2")
-	)
-	(wire
-		(pts
 			(xy 161.29 91.44) (xy 165.1 91.44)
 		)
 		(stroke
@@ -4299,13 +4467,13 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 132.08) (xy 104.14 134.62)
+			(xy 68.58 38.1) (xy 76.2 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d23d1fa0-3859-422a-bec4-55a397325532")
+		(uuid "d325f172-0ff2-495e-b81a-c2d55b054a71")
 	)
 	(wire
 		(pts
@@ -4326,16 +4494,6 @@
 			(type default)
 		)
 		(uuid "d4c8204f-4674-4d33-b1bb-7f36acd4d9f3")
-	)
-	(wire
-		(pts
-			(xy 102.87 134.62) (xy 104.14 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dce488c5-a2d9-4a5a-a014-54db60b19eac")
 	)
 	(wire
 		(pts
@@ -4369,13 +4527,23 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 38.1) (xy 63.5 41.91)
+			(xy 68.58 38.1) (xy 68.58 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ee8391c7-5a18-4746-876f-0c0a50374778")
+	)
+	(wire
+		(pts
+			(xy 50.8 49.53) (xy 50.8 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e9a362-dd50-4e48-8807-bc0eac87a80a")
 	)
 	(wire
 		(pts
@@ -4386,6 +4554,25 @@
 			(type default)
 		)
 		(uuid "f86f9848-a6fd-4d62-8c0d-818d992c24f7")
+	)
+	(text_box "Switch with TPS79718QDCKRQ1"
+		(exclude_from_sim no)
+		(at 38.1 15.24 0)
+		(size 25.4 10.16)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "48ce8f98-a3da-4c23-aa4e-6ff24827324f")
 	)
 	(label "SDA_1V8"
 		(at 226.06 73.66 180)
@@ -4408,6 +4595,17 @@
 			(justify left bottom)
 		)
 		(uuid "68095aef-e365-4d73-9bfd-2dae7263dd5b")
+	)
+	(label "SCL_1V8"
+		(at 152.4 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6a760b77-60cb-4ba3-9bf5-0f292d765ebe")
 	)
 	(label "W_DISABLE"
 		(at 226.06 83.82 180)
@@ -4453,6 +4651,17 @@
 		)
 		(uuid "87ad42fa-d60c-4e91-8a07-dc28ec22f446")
 	)
+	(label "SCL_3V3"
+		(at 114.3 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9984ec18-1d89-41d0-bf86-fd1d06696348")
+	)
 	(label "W_DISABLE"
 		(at 73.66 124.46 0)
 		(fields_autoplaced yes)
@@ -4465,6 +4674,17 @@
 		(uuid "9d4ba115-1ddd-4038-aa5d-7f6e36ff9153")
 	)
 	(label "SDA_3V3"
+		(at 114.3 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0e8bdeb-fe8e-4af7-897e-92cd99932496")
+	)
+	(label "SDA_3V3"
 		(at 73.66 111.76 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4474,6 +4694,17 @@
 			(justify left bottom)
 		)
 		(uuid "c57c417c-2b57-4184-9ad3-1fbf4aae9f8f")
+	)
+	(label "SDA_1V8"
+		(at 144.78 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c7b42d78-5c3f-4b4c-8b07-cc88a401ef7b")
 	)
 	(label "D_P"
 		(at 80.01 83.82 0)
@@ -4534,7 +4765,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/Diodes_Incorporated_BSS138K.pdf"
+		(property "Datasheet" "datasheets/Diodes-Incorporated-BSS138K.pdf"
 			(at 139.7 35.56 90)
 			(effects
 				(font
@@ -4635,7 +4866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/Amphenol_SSIO_PCIe_M2.pdf"
+		(property "Datasheet" "datasheets/Amphenol-SSIO-PCIe-M2-Drawing.pdf"
 			(at 190.5 74.93 0)
 			(effects
 				(font
@@ -4644,7 +4875,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "67 Position Female Connector M.2 (NGFF) Mini Card Gold 0.020\" (0.50mm) Black"
+		(property "Description" "CONN M.2 FMALE 67POS 0.020 GOLD"
 			(at 190.5 101.6 0)
 			(effects
 				(font
@@ -4881,10 +5112,10 @@
 		(pin "71"
 			(uuid "1612905a-e497-4279-8433-3b676bd3eecc")
 		)
-		(pin "S2"
+		(pin "S1"
 			(uuid "fdcf607f-28b0-489f-867f-8d34972a75ba")
 		)
-		(pin "S1"
+		(pin "S2"
 			(uuid "3e5b6c13-838b-423c-aa4d-ea73584fbc35")
 		)
 		(instances
@@ -5028,6 +5259,136 @@
 	)
 	(symbol
 		(lib_id "lib_sch:GND")
+		(at 218.44 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1c1193b1-37c9-4395-8ed2-3b8d0fb280dc")
+		(property "Reference" "#PWR016"
+			(at 218.44 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 218.44 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 218.44 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a035e7d-a43c-4317-8479-57fd3884f1cd")
+		)
+		(instances
+			(project "mPCIE-to-M_2_E-Key"
+				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lib_sch:GND")
+		(at 38.1 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fe67aba-f7ef-4842-aef1-127da82d2128")
+		(property "Reference" "#PWR019"
+			(at 38.1 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 112.014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6f8feb96-6f89-4993-8b55-839bf64ee7c6")
+		)
+		(instances
+			(project "mPCIE-to-M_2_E-Key"
+				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lib_sch:GND")
 		(at 190.5 152.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5086,6 +5447,212 @@
 			(project "mPCIE-to-M_2_E-Key"
 				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 38.1 77.47 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "35b70ddf-e107-4e69-ac6a-f03836faedc0")
+		(property "Reference" "H1"
+			(at 40.64 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M2.5"
+			(at 40.64 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lib_fp:M2.5_MH"
+			(at 38.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 38.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 38.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 38.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" ""
+			(at 38.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 38.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ecc13ed-83a5-40c5-97b4-ad701b90d32a")
+		)
+		(instances
+			(project ""
+				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 50.8 77.47 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "403a1245-4105-4235-90ba-aba0efa22097")
+		(property "Reference" "H2"
+			(at 53.34 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M2.5"
+			(at 53.34 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lib_fp:M2.5_MH"
+			(at 50.8 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 50.8 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 50.8 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 50.8 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" ""
+			(at 50.8 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 50.8 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a69e8c30-5aa8-4c2d-8c40-c8d815518e03")
+		)
+		(instances
+			(project "mPCIE-to-M_2_E-Key"
+				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -5287,6 +5854,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 38.1 102.87 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "515b7d6e-b2b2-4f21-8154-8e1f4f5bc0f9")
+		(property "Reference" "H3"
+			(at 40.64 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3.5"
+			(at 40.64 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lib_fp:MountingHole_3.5mm_Pad_Via"
+			(at 38.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 38.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 38.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 38.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" ""
+			(at 38.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field-1" ""
+			(at 38.1 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b3ff754-a336-4d8b-a95b-a695a6af1005")
+		)
+		(instances
+			(project "mPCIE-to-M_2_E-Key"
+				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "lib_sch:+3V3")
 		(at 190.5 50.8 0)
 		(unit 1)
@@ -5388,7 +6058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/Diodes_Incorporated_BSS138K.pdf"
+		(property "Datasheet" "datasheets/Diodes-Incorporated-BSS138K.pdf"
 			(at 127 48.26 90)
 			(effects
 				(font
@@ -5480,7 +6150,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "lib_fp:BUS_mPCIe"
 			(at 101.6 101.6 0)
 			(effects
 				(font
@@ -5499,6 +6169,33 @@
 			)
 		)
 		(property "Description" "Mini-PCI Express bus connector"
+			(at 101.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 101.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 101.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" ""
 			(at 101.6 101.6 0)
 			(effects
 				(font
@@ -5542,9 +6239,6 @@
 		)
 		(pin "36"
 			(uuid "31bea933-d8e3-4a4a-aaf0-19acb6e469fc")
-		)
-		(pin "MP"
-			(uuid "90247c6c-0fb8-4e69-9dc1-728390f49efa")
 		)
 		(pin "2"
 			(uuid "783eef3a-d008-4426-bba1-ccdf00a4ec75")
@@ -5677,15 +6371,15 @@
 	)
 	(symbol
 		(lib_id "lib_sch:GND")
-		(at 102.87 137.16 0)
+		(at 50.8 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "86829394-8daf-4a46-9307-f85b4fd7df50")
-		(property "Reference" "#PWR02"
-			(at 102.87 143.51 0)
+		(uuid "772b119e-2a74-46e9-8b17-54cfbfe71538")
+		(property "Reference" "#PWR018"
+			(at 50.8 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5694,7 +6388,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 140.97 0)
+			(at 50.8 86.614 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5702,7 +6396,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 137.16 0)
+			(at 50.8 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5711,7 +6405,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 137.16 0)
+			(at 50.8 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5720,7 +6414,72 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 137.16 0)
+			(at 50.8 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5fb3b09-f1ef-4fc6-ac0b-654b6f680f16")
+		)
+		(instances
+			(project "mPCIE-to-M_2_E-Key"
+				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lib_sch:GND")
+		(at 101.6 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86829394-8daf-4a46-9307-f85b4fd7df50")
+		(property "Reference" "#PWR02"
+			(at 101.6 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5770,7 +6529,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lib_fp:RESC160X80X55L30N"
+		(property "Footprint" "lib_fp:CRCW0603"
 			(at 101.6 29.21 0)
 			(effects
 				(font
@@ -5779,7 +6538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/Vishay_Dale_DCRCWe3.pdf"
+		(property "Datasheet" "datasheets/Vishay-Dale-DRCWe3.pdf"
 			(at 101.6 29.21 0)
 			(effects
 				(font
@@ -5935,110 +6694,6 @@
 		)
 	)
 	(symbol
-		(lib_id "lib_sch:TL1963A-XX")
-		(at 50.8 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a79caefd-f042-45c8-b9e0-949358ffbdb8")
-		(property "Reference" "U1"
-			(at 50.8 31.75 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TL1963A"
-			(at 50.8 33.782 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "lib_fp:SOT223-4"
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "datasheets/Texas_Instruments_TL1963A.pdf"
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "IC REG LINEAR 1.8V 1.5A SOT223-4"
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 50.8 37.846 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TL1963A-18DCYR"
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DKPN" "296-24895-1-ND"
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "238711c7-9994-41a0-be46-b13ba0aab7ac")
-		)
-		(pin "4"
-			(uuid "6ed59dc1-e641-4ee2-a574-bd636ba8b080")
-		)
-		(pin "2"
-			(uuid "1da04f15-2f09-4038-bc0b-5326011b7205")
-		)
-		(pin "3"
-			(uuid "c2c4b38a-ba12-42a9-a23a-33fa1b72bada")
-		)
-		(instances
-			(project ""
-				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "lib_sch:C")
 		(at 38.1 44.45 0)
 		(mirror y)
@@ -6059,7 +6714,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "100nF"
 			(at 36.195 43.18 0)
 			(do_not_autoplace yes)
 			(effects
@@ -6069,7 +6724,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lib_fp:CAPC160X80X88L35N"
+		(property "Footprint" "lib_fp:MLCC0603"
 			(at 38.1 42.545 0)
 			(effects
 				(font
@@ -6078,7 +6733,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/KYOCERA-AVX_cX5R-KGM.pdf"
+		(property "Datasheet" "datasheets/Kyocera-AVX-MLCCKAM.pdf"
 			(at 38.1 42.545 0)
 			(effects
 				(font
@@ -6087,7 +6742,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 10UF 25V X5R 0603"
+		(property "Description" "CAP CER 0.1UF 50V X7R 0603"
 			(at 38.1 44.45 0)
 			(effects
 				(font
@@ -6105,7 +6760,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "06033D106KAT2A"
+		(property "MPN" "06035C104K4T4A"
 			(at 38.1 42.545 0)
 			(effects
 				(font
@@ -6114,7 +6769,7 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "478-KGM15CR51E106KTCT-ND"
+		(property "DKPN" "478-KAM15AR71H104KMCT-ND"
 			(at 38.1 44.45 0)
 			(effects
 				(font
@@ -6133,7 +6788,7 @@
 				(justify left)
 			)
 		)
-		(property "Voltage Rating" "25V"
+		(property "Voltage Rating" "50V"
 			(at 36.195 44.45 0)
 			(do_not_autoplace yes)
 			(effects
@@ -6198,7 +6853,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lib_fp:RESC160X80X55L30N"
+		(property "Footprint" "lib_fp:CRCW0603"
 			(at 114.3 29.21 0)
 			(effects
 				(font
@@ -6207,7 +6862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/Vishay_Dale_DCRCWe3.pdf"
+		(property "Datasheet" "datasheets/Vishay-Dale-DRCWe3.pdf"
 			(at 114.3 29.21 0)
 			(effects
 				(font
@@ -6327,7 +6982,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lib_fp:RESC160X80X55L30N"
+		(property "Footprint" "lib_fp:CRCW0603"
 			(at 152.4 29.21 0)
 			(effects
 				(font
@@ -6336,7 +6991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/Vishay_Dale_DCRCWe3.pdf"
+		(property "Datasheet" "datasheets/Vishay-Dale-DRCWe3.pdf"
 			(at 152.4 29.21 0)
 			(effects
 				(font
@@ -6493,7 +7148,7 @@
 	)
 	(symbol
 		(lib_id "lib_sch:C")
-		(at 63.5 44.45 0)
+		(at 68.58 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6502,7 +7157,7 @@
 		(fields_autoplaced yes)
 		(uuid "d47c7940-7a2c-452f-a040-68e1d17c30a0")
 		(property "Reference" "C2"
-			(at 65.405 41.91 0)
+			(at 70.485 41.91 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6511,8 +7166,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 65.405 43.18 0)
+		(property "Value" "470nF"
+			(at 70.485 43.18 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6521,8 +7176,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lib_fp:CAPC160X80X88L35N"
-			(at 63.5 42.545 0)
+		(property "Footprint" "lib_fp:MLCC0805"
+			(at 68.58 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6530,8 +7185,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/KYOCERA-AVX_cX5R-KGM.pdf"
-			(at 63.5 42.545 0)
+		(property "Datasheet" "datasheets/Kyocera-AVX-MLCCKAM.pdf"
+			(at 68.58 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6539,8 +7194,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 10UF 25V X5R 0603"
-			(at 63.5 44.45 0)
+		(property "Description" "CAP CER 0.47UF 16V X7R 0805"
+			(at 68.58 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6549,7 +7204,7 @@
 			)
 		)
 		(property "Manufacturer" "KYOCERA AVX"
-			(at 63.5 42.545 0)
+			(at 68.58 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6557,8 +7212,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "06033D106KAT2A"
-			(at 63.5 42.545 0)
+		(property "MPN" "KAM21KR71C474KU"
+			(at 68.58 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6566,8 +7221,8 @@
 				(hide yes)
 			)
 		)
-		(property "DKPN" "478-KGM15CR51E106KTCT-ND"
-			(at 63.5 44.45 0)
+		(property "DKPN" "478-KAM21KR71C474KUCT-ND"
+			(at 68.58 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6576,7 +7231,7 @@
 			)
 		)
 		(property "Tolerance" "10%"
-			(at 65.405 45.72 0)
+			(at 70.485 45.72 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6585,8 +7240,8 @@
 				(justify left)
 			)
 		)
-		(property "Voltage Rating" "25V"
-			(at 65.405 44.45 0)
+		(property "Voltage Rating" "16V"
+			(at 70.485 44.45 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6595,8 +7250,8 @@
 				(justify left)
 			)
 		)
-		(property "Package" "0603"
-			(at 65.405 46.99 0)
+		(property "Package" "0805"
+			(at 70.485 46.99 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6650,7 +7305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "lib_fp:RESC160X80X55L30N"
+		(property "Footprint" "lib_fp:CRCW0603"
 			(at 165.1 29.21 0)
 			(effects
 				(font
@@ -6659,7 +7314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/Vishay_Dale_DCRCWe3.pdf"
+		(property "Datasheet" "datasheets/Vishay-Dale-DRCWe3.pdf"
 			(at 165.1 29.21 0)
 			(effects
 				(font
@@ -6744,6 +7399,71 @@
 			(project "mPCIE-to-M_2_E-Key"
 				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lib_sch:GND")
+		(at 38.1 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7f8046c-b505-4f89-a0ff-dec88e42565b")
+		(property "Reference" "#PWR017"
+			(at 38.1 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 38.1 86.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 38.1 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "05823276-80e8-4926-b7b6-34e0cfcde083")
+		)
+		(instances
+			(project ""
+				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -6881,7 +7601,7 @@
 	)
 	(symbol
 		(lib_id "lib_sch:GND")
-		(at 50.8 50.8 0)
+		(at 50.8 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6889,7 +7609,7 @@
 		(dnp no)
 		(uuid "e3fa93d4-61d2-453a-9b43-45e9eb864b82")
 		(property "Reference" "#PWR011"
-			(at 50.8 57.15 0)
+			(at 50.8 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6898,7 +7618,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 54.61 0)
+			(at 50.8 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6906,7 +7626,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 50.8 0)
+			(at 50.8 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6915,7 +7635,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 50.8 0)
+			(at 50.8 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6924,7 +7644,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 50.8 0)
+			(at 50.8 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7010,8 +7730,241 @@
 		)
 	)
 	(symbol
+		(lib_id "lib_sch:TPS797xx-Q1")
+		(at 50.8 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec574495-ded1-41d5-83ea-30426789767f")
+		(property "Reference" "U1"
+			(at 50.8 30.48 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS79718"
+			(at 50.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lib_fp:SOT323-65P210X110-5"
+			(at 50.8 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/Texas-Instruments-TPS7918.pdf"
+			(at 50.8 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "IC REG LINEAR 1.8V 10MA SC70-5"
+			(at 50.8 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 50.546 40.64 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TPS79718QDCKRQ1"
+			(at 50.8 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "296-23648-6-ND"
+			(at 50.8 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "ea9f4f5d-c00c-49be-9671-53982d7aa268")
+		)
+		(pin "3"
+			(uuid "678e86ce-bad5-4dd2-8b71-4921414fa1ec")
+		)
+		(pin "2"
+			(uuid "83aa6a66-b2d6-4ba0-b6d3-a04e473626c4")
+		)
+		(pin "1"
+			(uuid "6c9d2d97-87ff-434d-806a-6fd439f2c72f")
+		)
+		(pin "4"
+			(uuid "002798e0-9d3d-4118-bf8e-d2de0313ef52")
+		)
+		(instances
+			(project ""
+				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lib_sch:R")
+		(at 59.69 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0d968ba-2952-4302-a79a-bfccfd7f2039")
+		(property "Reference" "R5"
+			(at 60.96 38.1 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100K"
+			(at 60.96 39.37 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "lib_fp:CRCW0603"
+			(at 59.69 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/Vishay-Dale-DRCWe3.pdf"
+			(at 59.69 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES SMD 100K OHM 5% 1/10W 0603"
+			(at 59.69 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay Dale"
+			(at 59.69 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW0603100KJNEA"
+			(at 59.69 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DKPN" "541-100KGCT-ND"
+			(at 59.69 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 60.96 40.64 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Power Rating" "100mW"
+			(at 60.96 41.91 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "0603"
+			(at 60.96 43.18 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "5aa59a48-3c87-4e39-a081-c12a6ed23e0b")
+		)
+		(pin "1"
+			(uuid "5bcec378-e8d8-4927-a1f2-5ecaf825430d")
+		)
+		(instances
+			(project "mPCIE-to-M_2_E-Key"
+				(path "/92319e80-9ef9-4fce-8d58-8a23815693d7"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "lib_sch:GND")
-		(at 63.5 50.8 0)
+		(at 68.58 50.8 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7020,7 +7973,7 @@
 		(dnp no)
 		(uuid "f7a7e47d-e5a5-43c9-94a6-600d4c6ef680")
 		(property "Reference" "#PWR015"
-			(at 63.5 57.15 0)
+			(at 68.58 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7029,7 +7982,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 54.61 0)
+			(at 68.58 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7037,7 +7990,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 50.8 0)
+			(at 68.58 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7046,7 +7999,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 50.8 0)
+			(at 68.58 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7055,7 +8008,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 50.8 0)
+			(at 68.58 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
