@@ -1,0 +1,128 @@
+(footprint "conn_01x06_254"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.7 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fc95e32f-5e54-4ee8-87c7-01c2f24d51e4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.05)
+			)
+		)
+	)
+	(property "Value" "Conn_01x06_Pin"
+		(at -4.19 -0.03 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c56dd017-4b38-4e17-a2ab-c85c1f0d893b")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.05)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -4.19 -0.03 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "36af8bc8-4740-415a-9467-9eed91bef246")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Generic connector, single row, 01x06, script generated"
+		(at -4.19 -0.03 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "95b32db1-d0c3-44a6-9eca-710d3dc76c18")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -7.62 -1.27)
+		(end 7.62 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "82caae89-3fb5-4746-ac9b-468370c68f02")
+	)
+	(pad "1" thru_hole rect
+		(at -6.35 0)
+		(size 1.7 1.7)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ae2aca69-3a04-4278-9a82-92f0643a82a9")
+	)
+	(pad "2" thru_hole circle
+		(at -3.81 0)
+		(size 1.7 1.7)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c62e6a56-6d05-4ccb-980b-a346a1dd368a")
+	)
+	(pad "3" thru_hole circle
+		(at -1.27 0)
+		(size 1.7 1.7)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "aa682054-17f9-4c71-a936-e5950a5569a4")
+	)
+	(pad "4" thru_hole circle
+		(at 1.27 0)
+		(size 1.7 1.7)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "49f71abe-c6cf-4133-a9a8-eb42571e0322")
+	)
+	(pad "5" thru_hole circle
+		(at 3.81 0)
+		(size 1.7 1.7)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "811c9598-4350-4178-a60e-57bb54f3ac1d")
+	)
+	(pad "6" thru_hole circle
+		(at 6.35 0)
+		(size 1.7 1.7)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cc9c1f25-4aed-4f11-a07e-2b8b953187dd")
+	)
+	(embedded_fonts no)
+	(model ":DESTINATION_SPACE_MODELS:Connector_PinHeader_2.54mm/1x12ShortHeader.stp"
+		(offset
+			(xyz -3.5 -49.8 -19.7)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

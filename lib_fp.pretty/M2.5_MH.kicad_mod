@@ -1,14 +1,14 @@
 (footprint "M2.5_MH"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "77cfb484-447d-4ac0-876b-45267fadf344")
+		(uuid "e45c58d1-afff-4705-b179-6e5e3326212a")
 		(effects
 			(font
 				(size 1 1)
@@ -16,25 +16,12 @@
 			)
 		)
 	)
-	(property "Value" "M2.60_NPTH"
+	(property "Value" "M2.5"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "6a77e7bd-597e-4ca5-b734-bc60b0f36075")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.05)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "888d07b9-29cd-46f3-a46e-8bf81df6ea3d")
+		(uuid "0fd39b92-811e-4643-9b27-b1b1a231c6b1")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -47,7 +34,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "deec3e2e-cc39-4369-8b98-c5a81bb171bf")
+		(uuid "80a8ec06-0ace-42af-8620-1f59c9e2d6fb")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -55,12 +42,12 @@
 			)
 		)
 	)
-	(property "Description" ""
+	(property "Description" "Mounting Hole with connection"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f9948048-c0c2-4c25-a3c3-0d9cbbd58d24")
+		(uuid "9f64263b-29b0-43fb-934c-e89b817c6986")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -68,13 +55,65 @@
 			)
 		)
 	)
-	(attr through_hole)
+	(property "Manufacturer" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8cdcc367-1acf-4d18-b579-7e3663f18f35")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a2180a9b-0e81-4eaf-89b1-f544f38b5d1f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "DKPN" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d3fba2e4-b4fe-4d6d-a230-2d781b72ed2f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Field-1" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f6a4a486-836e-45ba-95c9-d84140575356")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole exclude_from_bom dnp)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "f53dae84-63c0-42d0-9db2-e10519244e0f")
+		(uuid "25b57e0d-cfaf-4985-adf7-c13f2a7d7117")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -89,6 +128,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(zone_connect 2)
-		(uuid "532a9831-39bd-44e7-a5ee-776390909ba6")
+		(uuid "15756a62-ca20-47f9-a744-897f436a6353")
 	)
+	(embedded_fonts no)
 )
